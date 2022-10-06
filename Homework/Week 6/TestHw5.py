@@ -176,7 +176,7 @@ class TestSolveable(unittest.TestCase):
                 #6 - - - - p - - -
                 #7 - - - - - - - -
 
-                # self.assertEqual(solveable({(0,2), (1,4), (2,6), (4,5), (5,2), (6,4)}, (3,3)), True) # 2
+                self.assertEqual(solveable({(0,2), (1,4), (2,6), (4,5), (5,2), (6,4)}, (3,3)), True) # 2
                 
                 #  0 1 2 3 4 5 6 7
                 #0 - - - - - - - -
@@ -188,7 +188,7 @@ class TestSolveable(unittest.TestCase):
                 #6 - p p - - - - -
                 #7 k p p p - - - -
 
-                # self.assertEqual(solveable({(5,0), (5,1), (5,2), (5,3), (6,1), (6,2), (7,1), (7,2), (7,3)}, (7,0)), True)
+                self.assertEqual(solveable({(5,0), (5,1), (5,2), (5,3), (6,1), (6,2), (7,1), (7,2), (7,3)}, (7,0)), True)
 
 
 
