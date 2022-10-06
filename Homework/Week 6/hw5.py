@@ -4,6 +4,7 @@ def solveable(p_idxs, k_idx):
     
     if p_idxs is None: return True
     if p_idxs == {}: return True
+    if len(p_idxs) == 0: return True
 
     # 2) Find all valid_moves
 
