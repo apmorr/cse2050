@@ -13,8 +13,6 @@ def solveable(p_idxs, k_idx):
 
     # 3) Try all valid_moves
 
-    if len(validMoves) == 0: return False
-
     pawn_squares = set()
     for move in validMoves:
         for i in p_idxs:
@@ -29,9 +27,8 @@ def solveable(p_idxs, k_idx):
 
     # 4) If nothing worked in step 3, there's no solution with the knight in this position
 
-    else: 
-        p_idxs.add(k_idx)
-        return False
+    p_idxs.add(k_idx) # If false, add back the pawn so it doesn't return True every time
+    return False
 
 
 def valid_moves(k_idx):
