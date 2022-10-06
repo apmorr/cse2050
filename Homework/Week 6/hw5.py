@@ -1,5 +1,3 @@
-import copy
-
 def solveable(p_idxs, k_idx):
     """Returns True (false) if all pawn locations can be capture by sequential knight moves"""
     # 1) Base case - is the puzzle solved?
@@ -9,7 +7,6 @@ def solveable(p_idxs, k_idx):
     
     if len(p_idxs) == 0: return True
 
-    
     # 2) Find all valid_moves
 
     validMoves = valid_moves(k_idx)
@@ -18,7 +15,6 @@ def solveable(p_idxs, k_idx):
 
     if len(validMoves) == 0: return False
 
-    
     pawn_squares = set()
     for move in validMoves:
         for i in p_idxs:
