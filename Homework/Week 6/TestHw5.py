@@ -190,4 +190,5 @@ class TestSolveable(unittest.TestCase):
 
                 self.assertEqual(solveable({(5,0), (5,1), (5,2), (5,3), (6,1), (6,2), (7,1), (7,2), (7,3)}, (7,0)), True)
 
+
 unittest.main()
