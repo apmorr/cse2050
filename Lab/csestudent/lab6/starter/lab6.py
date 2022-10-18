@@ -67,7 +67,9 @@ class OrderedList:
         """searches for item using `left` and `right` indices instead of slicing"""
         if right is None: right = len(self)
         if right - left == 0: return False
-        if right - left == 1: return self._L[left] == item
+        if right - left == 1: 
+            print(self._L[left])
+            return self._L[left] == item
         median = (right + left) // 2
         if item < self._L[median]:
             return self._bs(item, left, median)

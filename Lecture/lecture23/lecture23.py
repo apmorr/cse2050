@@ -40,3 +40,16 @@ def selection_sort(L):
         L[j], L[i_big] = L[i_big], L[j]
 
         # swap it
+
+
+def insertion_sort(L):
+    """Uses insertion sort to sort L in-place"""
+    n = len(L)
+    for i in range(1,n):
+        r=print(f"i={i}")
+        for j in range(n-1-i, n-1):
+            if L[j] < L[j+1]:
+                L[j], L[j+1] = L[j+1], L[j]
+            print(f"\tj={j}")
+            print_list(L, tab=True)
+            input()
